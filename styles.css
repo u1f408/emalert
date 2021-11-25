@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after
+{
+	box-sizing: border-box;
+}
+
+html,
+body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100vw;
+	font-family: sans-serif;
+}
+
+body
+{	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding:  1rem;
+}
+
+.box
+{
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border: 1px solid #000;
+	border-radius: 2px;
+}
+
+.box h1
+{
+	margin: 0 0 1rem 0;
+	padding: 0 0 0.125rem 0;
+	text-align: center;
+	font-size: 1.125rem;
+	border-bottom: 1px solid #333;
+}
+
+.constrain,
+.constrain-within > .block
+{
+	max-width: 100%;
+}
+
+@media screen and (min-width: 48rem) {
+	.constrain,
+	.constrain-within > .block
+	{
+		max-width: min(50vw, 32rem);
+	}
+}
+
+.form
+{
+	width: 100%;
+	margin: 0 0 1rem 0;
+}
+
+.form input:not([type = "checkbox"]),
+.form select,
+.form button,
+.form textarea
+{
+	display: block;
+	width: 100%;
+	padding: 0.25rem;
+	margin-bottom: 0.5rem;
+	border: 1px solid #000;
+	border-radius: 2px;
+}

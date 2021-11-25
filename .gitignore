@@ -1,0 +1,5 @@
+/config.php
+
+# environment stuff
+.env
+.envrc
