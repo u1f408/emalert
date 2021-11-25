@@ -1,5 +1,5 @@
 <?php declare(strict_types=1);
-if (!defined("BASE_DIR")) die;
+if (!defined("X_BASE_DIR")) die;
 
 define("EMALERT_TOKENS", [
 	"abcd" => [
